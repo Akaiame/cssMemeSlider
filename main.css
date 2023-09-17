@@ -76,3 +76,39 @@ img {
     background-color: rgb(81, 124, 189);
     transition: all 0.15s ease; 
 }
+
+#radio1:checked ~ .nav .buttons .custom__radio:nth-child(1) span {
+    background-color: rgb(37,40,42);
+    border: solid 2px rgb(117,171,250); 
+}
+
+#radio2:checked ~ .nav .buttons .custom__radio:nth-child(2) span {
+    background-color: rgb(37,40,42);
+    border: solid 2px rgb(117,171,250); 
+}
+
+#radio3:checked ~ .nav .buttons .custom__radio:nth-child(3) span {
+    background-color: rgb(37,40,42);
+    border: solid 2px rgb(117,171,250); 
+}
+
+#radio4:checked ~ .nav .buttons .custom__radio:nth-child(4) span {
+    background-color: rgb(37,40,42);
+    border: solid 2px rgb(117,171,250); 
+}
+  
+#radio1:checked ~ .slider__wrapper .slider__list {
+    transform: translateX(0);
+}
+  
+#radio2:checked ~ .slider__wrapper .slider__list {
+    transform: translateX(-100%);
+}
+  
+#radio3:checked ~ .slider__wrapper .slider__list {
+    transform: translateX(-200%);
+}
+  
+#radio4:checked ~ .slider__wrapper .slider__list {
+    transform: translateX(-300%);
+}
