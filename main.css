@@ -39,3 +39,40 @@ img {
     flex-basis: 100%;
     flex-shrink: 0;
 }
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+    margin-top: 2%;
+}
+  
+.nav .custom__radio {
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+}
+  
+.buttons {
+    display: flex;
+}
+
+.nav .buttons .custom__radio span {
+    margin: auto;
+    margin-top: 15%;
+    border-radius: 50%;
+    display: block;
+    background-color: rgb(117,171,250);
+    width: 1.9vh;
+    height: 1.9vh;
+}
+  
+.nav .custom__radio span:hover {
+    background-color: white;
+    transition: all 0.15s ease; 
+}
+  
+.nav .custom__radio span:active {
+    background-color: rgb(81, 124, 189);
+    transition: all 0.15s ease; 
+}
