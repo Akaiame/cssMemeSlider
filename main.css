@@ -77,6 +77,22 @@ img {
     transition: all 0.15s ease; 
 }
 
+.caption__wrapper {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+  
+.caption {
+    transition: transform 600ms ease-in-out;
+    flex-basis: 100%;
+    flex-shrink: 0;
+}
+  
+.caption h4 {
+    color: rgb(238, 244, 250);
+}
+
 #radio1:checked ~ .nav .buttons .custom__radio:nth-child(1) span {
     background-color: rgb(37,40,42);
     border: solid 2px rgb(117,171,250); 
@@ -110,5 +126,21 @@ img {
 }
   
 #radio4:checked ~ .slider__wrapper .slider__list {
+    transform: translateX(-300%);
+}
+
+#radio1:checked ~ .nav .caption__wrapper .caption {
+    transform: translateX(0);
+}
+
+#radio2:checked ~ .nav .caption__wrapper .caption {
+    transform: translateX(-100%);
+}
+
+#radio3:checked ~ .nav .caption__wrapper .caption {
+    transform: translateX(-200%);
+}
+
+#radio4:checked ~ .nav .caption__wrapper .caption {
     transform: translateX(-300%);
 }
